@@ -1,0 +1,44 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>/Volumes/NO NAME/myViewer/myViewer.jar</jar>
+  <outfile>/Volumes/NO NAME/myViewer/myviewer.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>true</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>/Volumes/NO NAME/myViewer/myExerciseBrowser.ico</icon>
+  <classPath>
+    <mainClass>com.pagosoft.myview.view.MyView</mainClass>
+    <cp>lib/PDFRenderer.jar</cp>
+    <cp>lib/miglayout-3.7-swing.jar</cp>
+    <cp>lib/guice-2.0.jar</cp>
+    <cp>lib/aopalliance.jar</cp>
+    <cp>lib/glazedlists-1.8.0_java15.jar</cp>
+    <cp>lib/PgsLookAndFeel.jar</cp>
+    <cp>lib/PgsAction.jar</cp>
+  </classPath>
+  <jre>
+    <path></path>
+    <minVersion>1.5.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0</txtFileVersion>
+    <fileDescription>myExerciseExplorer is an application to view and print exercises for students.</fileDescription>
+    <copyright>2010 Pagosoft. All rights reserved.</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0</txtProductVersion>
+    <productName>myExerciseExplorer</productName>
+    <companyName>Pagosoft</companyName>
+    <internalName>myExerciseExplorer</internalName>
+    <originalFilename>myExerciseExplorer.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>

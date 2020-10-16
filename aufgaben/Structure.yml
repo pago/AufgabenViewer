@@ -1,0 +1,78 @@
+fraction:
+  title: Brüche
+  content:
+    -
+      id: fraction101
+      title: '101 Brüche als Division'
+    -
+      id: fraction102
+      title: '102 Brüche als Division mit Rest'
+    -
+      id: fraction103
+      title: '103 Umwandlung von Brüchen in ganze und gemischte Zahlen'
+    -
+      id: fraction110
+      title: '110 Umwandlung von gemischten Zahlen in unechte Brüche'
+    -
+      id: fraction120
+      title: '120 Umwandlung von Brüchen gemischt'
+    -
+      id: fraction200
+      title: '200 Teiler'
+    -
+      id: fraction210
+      title: '210 Größter gemeinsamer Teiler'
+    -
+      id: fraction220
+      title: '220 Kürzen von Brüchen'
+    -
+      id: fraction300
+      title: '300 Vergleichen von Brüchen 1'
+    -
+      id: fraction301
+      title: '301 Vergleichen von Brüchen 2'
+    -
+      id: fraction400
+      title: '400 Brüche multiplizieren'
+    -
+      id: fraction401
+      title: '401 Brüche mit ganzen Zahlen multiplizieren'
+    -
+      id: fraction410
+      title: '410 Brüche dividieren'
+    -
+      id: fraction420
+      title: '420 Brüche multiplizieren und dividieren'
+    -
+      id: fraction430
+      title: '430 Brüche mit gleichem Nenner addieren'
+    -
+      id: fraction440
+      title: '440 Brüche mit gleichem Nenner subtrahieren'
+    -
+      id: fraction450
+      title: '450 Brüche mit gleichem Nenner addieren und subtrahieren'
+    -
+      id: fraction451
+      title: '451 Rechnen mit Brüchen Teil 1'
+    -
+      id: fraction460
+      title: '460 Brüche erweitern'
+    -
+      id: fraction461
+      title: '461 Kleinstes gemeinsames Vielfaches'
+    -
+      id: fraction462
+      title: '462 Vergleichen von Brüchen 3'
+    -
+      id: fraction470
+      title: '470 Brüche mit ungleichem Nenner addieren'
+    -
+      id: fraction480
+      title: '480 Brüche mit ungleichem Nenner subtrahieren'
+    -
+      id: fraction490
+      title: '490 Brüche mit ungleichem Nenner addieren und subtrahieren'
+    -
+      id: fraction491
+      title: '491 Rechnen mit Brüchen Teil 2'

@@ -1,0 +1,29 @@
+<structure>
+	<topic id="fraction" title="Brüche">
+		<exercise id="fraction101">101 Brüche als Division</exercise>
+		<exercise id="fraction102">102 Brüche als Division mit Rest</exercise>
+		<exercise id="fraction103">103 Umwandlung von Brüchen in ganze und gemischte Zahlen</exercise>
+		<exercise id="fraction110">110 Umwandlung von gemischten Zahlen in unechte Brüche</exercise>
+		<exercise id="fraction120">120 Umwandlung von Brüchen gemischt</exercise>
+		<exercise id="fraction200">200 Teiler</exercise>
+		<exercise id="fraction210">210 Größter gemeinsamer Teiler</exercise>
+		<exercise id="fraction220">220 Kürzen von Brüchen</exercise>
+		<exercise id="fraction300">300 Vergleichen von Brüchen 1</exercise>
+		<exercise id="fraction301">301 Vergleichen von Brüchen 2</exercise>
+		<exercise id="fraction400">400 Brüche multiplizieren</exercise>
+		<exercise id="fraction401">401 Brüche mit ganzen Zahlen multiplizieren</exercise>
+		<exercise id="fraction410">410 Brüche dividieren</exercise>
+		<exercise id="fraction420">420 Brüche multiplizieren und dividieren</exercise>
+		<exercise id="fraction430">430 Brüche mit gleichem Nenner addieren</exercise>
+		<exercise id="fraction440">440 Brüche mit gleichem Nenner subtrahieren</exercise>
+		<exercise id="fraction450">450 Brüche mit gleichem Nenner addieren und subtrahieren</exercise>
+		<exercise id="fraction451">451 Rechnen mit Brüchen Teil 1</exercise>
+		<exercise id="fraction460">460 Brüche erweitern</exercise>
+		<exercise id="fraction461">461 Kleinstes gemeinsames Vielfaches</exercise>
+		<exercise id="fraction462">462 Vergleichen von Brüchen 3</exercise>
+		<exercise id="fraction470">470 Brüche mit ungleichem Nenner addieren</exercise>
+		<exercise id="fraction480">480 Brüche mit ungleichem Nenner subtrahieren</exercise>
+		<exercise id="fraction490">490 Brüche mit ungleichem Nenner addieren und subtrahieren</exercise>
+		<exercise id="fraction491">491 Rechnen mit Brüchen Teil 2</exercise>
+	</topic>
+</structure>

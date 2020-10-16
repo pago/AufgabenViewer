@@ -1,0 +1,14 @@
+<!--
+  ~ Copyright (c) 2010 Patrick Gotthardt. All rights reserved.
+  -->
+<structure>
+    <topic id="fraction" title="Brüche">
+        <exercise id="fraction101">101 Brüche als Division</exercise>
+        <exercise id="fraction102">102 Brüche als Division</exercise>
+        <exercise id="fraction103">103 Umwandlung von Brüchen in ganze und gemischte Zahlen</exercise>
+    </topic>
+    <topic id="foo " title="Foobar">
+        <exercise id="foo1">bla bla</exercise>
+        <exercise id="foo2">blubb</exercise>
+    </topic>
+</structure>

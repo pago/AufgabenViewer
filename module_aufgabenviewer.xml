@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2010 Patrick Gotthardt. All rights reserved.
+  -->
+
+<project name="module_aufgabenviewer" default="compile.module.aufgabenviewer">
+  <dirname property="module.aufgabenviewer.basedir" file="${ant.file.module_aufgabenviewer}"/>
+  
+  <property name="module.jdk.home.aufgabenviewer" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.aufgabenviewer" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.aufgabenviewer" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.aufgabenviewer" value="${compiler.args}"/>
+  
+  <property name="aufgabenviewer.output.dir" value="${module.aufgabenviewer.basedir}/out/production/AufgabenViewer"/>
+  <property name="aufgabenviewer.testoutput.dir" value="${module.aufgabenviewer.basedir}/out/test/AufgabenViewer"/>
+  
+  <path id="aufgabenviewer.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="aufgabenviewer.module.classpath">
+    <path refid="${module.jdk.classpath.aufgabenviewer}"/>
+    <fileset dir="${basedir}/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <pathelement location="${idea.home}/lib/junit-4.7.jar"/>
+  </path>
+  
+  <path id="aufgabenviewer.runtime.module.classpath">
+    <pathelement location="${aufgabenviewer.output.dir}"/>
+    <pathelement location="${aufgabenviewer.testoutput.dir}"/>
+    <fileset dir="${basedir}/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <pathelement location="${idea.home}/lib/junit-4.7.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.aufgabenviewer">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.aufgabenviewer">
+    <patternset refid="excluded.from.module.aufgabenviewer"/>
+  </patternset>
+  
+  <path id="aufgabenviewer.module.sourcepath">
+    <dirset dir="${module.aufgabenviewer.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  <path id="aufgabenviewer.module.test.sourcepath">
+    <dirset dir="${module.aufgabenviewer.basedir}">
+      <include name="tests"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.aufgabenviewer" depends="compile.module.aufgabenviewer.production,compile.module.aufgabenviewer.tests" description="Compile module AufgabenViewer"/>
+  
+  <target name="compile.module.aufgabenviewer.production" description="Compile module AufgabenViewer; production classes">
+    <mkdir dir="${aufgabenviewer.output.dir}"/>
+    <javac destdir="${aufgabenviewer.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.aufgabenviewer}/javac">
+      <compilerarg line="${compiler.args.aufgabenviewer}"/>
+      <bootclasspath refid="aufgabenviewer.module.bootclasspath"/>
+      <classpath refid="aufgabenviewer.module.classpath"/>
+      <src refid="aufgabenviewer.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.aufgabenviewer"/>
+    </javac>
+    
+    <copy todir="${aufgabenviewer.output.dir}">
+      <fileset dir="${module.aufgabenviewer.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.aufgabenviewer.tests" depends="compile.module.aufgabenviewer.production" description="compile module AufgabenViewer; test classes" unless="skip.tests">
+    <mkdir dir="${aufgabenviewer.testoutput.dir}"/>
+    <javac destdir="${aufgabenviewer.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.aufgabenviewer}/javac">
+      <compilerarg line="${compiler.args.aufgabenviewer}"/>
+      <classpath refid="aufgabenviewer.module.classpath"/>
+      <classpath>
+        <path refid="aufgabenviewer.module.classpath"/>
+        <pathelement location="${aufgabenviewer.output.dir}"/>
+      </classpath>
+      <src refid="aufgabenviewer.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.aufgabenviewer"/>
+    </javac>
+    
+    <copy todir="${aufgabenviewer.testoutput.dir}">
+      <fileset dir="${module.aufgabenviewer.basedir}/tests">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.aufgabenviewer" description="cleanup module">
+    <delete dir="${aufgabenviewer.output.dir}"/>
+    <delete dir="${aufgabenviewer.testoutput.dir}"/>
+  </target>
+</project>
